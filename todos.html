@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>**Todos**</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<meta charset="utf-8" >
+</head>
+<body class="bg-col">
+	<div class="container">
+		<header class="row t2 text-uppercase">
+			<h1 class="col-md-12">TodoList</h1>
+		</header>
+		<section id="sec" class="row">
+			<div class="col-md-6">
+				<div class="col-md-12 t2">
+					<!--
+					<button id="displayTodoButton" class="btn btn-primary">Display Todos</button>
+					<button onclick="handlers.displayTodo()" class="btn btn-primary">Display Todos</button>
+					<button id="toggleAllButton" class="btn btn-primary">Toggle All</button>
+					-->
+					<button onclick="handlers.toggleAll()" class="btn btn-primary">Toggle All</button>
+				</div>
+				<div class="col-md-12 t2" id="space">
+					<button onclick="handlers.addTodos()" class="btn btn-primary">Add</button>
+					<input id="addTodoTextInput" type="text" name="addTodoButton">
+				</div>
+				<div class="col-md-12 t2">
+					<button onclick="handlers.changeTodo()" class="btn btn-primary">ChangeTodo</button>
+					<input id="changeTodoPositionInput" type="number" name="position">
+					<input id="changeTodoTextInput" type="text" name="newText">
+				</div>
+				<!--
+				<div class="col-md-12 t2">
+					<button onclick="handlers.deleteTodo()" class="btn btn-primary">Delete Todo</button>
+					<input id="deleteTodoPositionInput" type="number" name="position">
+				</div>
+				-->
+				<div class="col-md-12 t2">
+					<button onclick="handlers.toggleCompleted()" class="btn btn-primary">Toggle Completed</button>
+					<input id="toggleCompletedPositionInput" type="number" name="position">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<ul>
+				
+				</ul>
+			</div>
+		</section>
+		<!-- <footer class="col-md-12" id="foot">
+			<div class="t2">@ made by</div>
+		</footer>
+		-->
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

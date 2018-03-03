@@ -1,0 +1,16 @@
+.bg-col{
+	background-color: #FFC107;
+}
+#sec{
+	padding-top: 25px;
+}
+#foot{
+	padding-top: 30px;
+}
+.col-md-12{
+	padding-top: 20px;
+}
+li{
+	font-weight: bold;
+	font-size: 30px;
+}
